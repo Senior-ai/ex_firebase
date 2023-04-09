@@ -2,7 +2,8 @@ import {useState} from 'react'
 import { useDispatch } from 'react-redux'
 const AddCar = () => {
   const dispatch = useDispatch();
-  const [car, setCar] = useState({model: '', year : 1990 , color : ''})
+  //In the 1st option you don't need the new status
+  const [car, setCar] = useState({model: '', year : 1990 , color : '', status: "NEW"})
 
   const add = () =>
   {
